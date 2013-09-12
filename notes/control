@@ -1,0 +1,18 @@
+Source: gtk-link-lizard
+Section: net
+Priority: extra
+Maintainer: Jim Frize <jim@sonodrome.co.uk>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+Homepage: http://sonodrome.co.uk
+#Vcs-Git: git://git.debian.org/collab-maint/gtk-link-lizard.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/gtk-link-lizard.git;a=summary
+
+Package: gtk-link-lizard
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python
+Description: Description: Simple GUI for storing and displaying web links
+ This GUI will do away with synchronizing bookmarks between browsers, 
+ web links are stored in a regular text file which is found
+ in your documents folder. GTK Link Lizard makes it easy to edit,
+ swap or replace a list of clickable links.

@@ -1,0 +1,33 @@
+make sandbox folder
+    make folder with same name as prog inc version num (lower case, numbers, plus or minus characters only)
+        copy-> *.py script
+            update any paths to destination
+        copy-> *.desktop launcher to prog folder (must not have spaces in file name)
+            update any paths to destination
+            add Catergories for GNOME menu
+            remove #!/usr/bin/env xdg-open
+
+compress prog folder in sandbox using *.tar.gz
+move *.tar.gz to prog folder in sandbox  
+
+goto prog folder
+    dh_make -e jim@sonodrome.co.uk -c gpl3 -f file.tar.gz
+
+edit-> prog-folder/debian/rules (Use tabs only)
+    
+edit-> prog-folder/debian/control
+    long description 80 chars per line max
+
+edit-> prog-folder/debian/copyright
+
+edit-> prog-folder/debian/docs
+
+delete *.ex and README files in debian folder
+
+delete *.tar.gz in prog folder
+
+goto prog folder
+    fakeroot dpkg-buildpackage -F
+
+Check package with Lintian
+    lintian file.deb
