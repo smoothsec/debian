@@ -1,0 +1,12 @@
+Package: suricata
+Version: 1.4.6
+Section: utils
+Priority: optional
+Architecture: amd64
+Essential: no
+Depends: 
+Maintainer: Phillip Bailey 
+Description: The short description of the script
+ A longer description of the descript, possible
+ spanning multiple lines.
+

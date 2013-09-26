@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+echo "Suricata configuration backup"
+cp /etc/suricata/suricata.yaml /etc/suricata/suricata.yaml.back
