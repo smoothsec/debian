@@ -1,0 +1,10 @@
+Package: scripts
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: all
+Essential: no
+Depends: 
+Maintainer: SmoothSec 
+Description: SmoothSec custom scripts.
+ SmoothSec custom scripts
